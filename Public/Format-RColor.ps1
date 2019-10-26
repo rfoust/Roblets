@@ -41,7 +41,7 @@ function Format-RColor {
 	)
 
 	begin {
-		# test colors like this: "f79f8150-e8a8-4a64-8610-15b0cc10434d [1/1/2019 00:00:00] 0xff {foo} [bar] nobody@example.com error info server http://example.com" | Format-DUColor
+		# test colors like this: "f79f8150-e8a8-4a64-8610-15b0cc10434d [1/1/2019 00:00:00] 0xff {foo} [bar] nobody@example.com error info server http://example.com" | Format-RColor
 		# Most of the regex strings and inspiration was borrowed from here: https://github.com/IBM-Cloud/vscode-log-output-colorizer/blob/master/src/syntaxes/log.tmLanguage
 
 		$patterns = [ordered]@{
