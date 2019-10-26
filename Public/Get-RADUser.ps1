@@ -160,7 +160,7 @@ function Get-RADUser {
 					$results
 				}
 				else {
-					ConvertFrom-DULDIF $results
+					ConvertFrom-RLDIF $results
 				}
 			}
 
