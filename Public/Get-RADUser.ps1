@@ -142,7 +142,7 @@ function Get-RADUser {
 				$ldapSearchStr = $LdapFilter
 			}
 			else {
-				$ldapSearchStr = "(&(|(objectClass=User)(objectClass=inetOrgPerson))(|(sAMAccountName=$id)(userPrincipalName=$id)(mail=$id)(employeeNumber=$id)))"
+				$ldapSearchStr = "'(&(|(objectClass=User)(objectClass=inetOrgPerson))(|(sAMAccountName=$id)(userPrincipalName=$id)(mail=$id)(employeeNumber=$id)))'"
 			}
 
 			if ($IsMacOS -or $IsLinux) {
